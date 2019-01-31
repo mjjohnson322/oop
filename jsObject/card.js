@@ -1,5 +1,5 @@
 "use strict";
-class card {
+class Card {
     constructor(name, type) {
         this._name=name;
         this._type=type;
@@ -8,35 +8,74 @@ class card {
         this._defense=0;
     }
     //Get functions
-    getName(){
+    get name(){
         return this._name;
     }
-    getAtk(){
+    get atk(){
         return this._attack;
     }
-    getDef(){
+    get def(){
         return this._defense;
     }
-    getEffects(){
+    get effects(){
         return this._effects;
     }
     //Set functions
-    setAtk(attack){
+    set atk(attack){
         this._attack=attack;
     }
-    setDef(defense){
-        this._defense=attack;
+    set def(defense){
+        this._defense=defense;
     }
     addEffect(effect){
         this._effects.push(effect)
     }
     printEffects(){
         for(var i = 0; i < this._effects.length; i++){ 
-		console.log(this._effects[i]);
-	}
+		    console.log(this._effects[i]);
+	    }
     }
 }
 
-eightfingbears = new Card('Eight Bears','monster');
-eightfingbears.addEffect('trample');
-eightfingbears.printEffects();
+class CardTest {
+    constructor(){
+        this.instance = new Card('Test', 'Test');
+    }
+    testAddEffect(effect) {
+        this.instance.addEffect(effect);
+        if (this.instance.effects[0] === effect){
+            console.log("Effect Okay");
+        }
+    }
+    testSetAtk(attack){
+        if(typeof attack === "number")
+            this.instance.attack = attack;
+        else throw "Attack must be number";
+        if (attack === this.instance.attack){
+            console.log("Attack Okay");
+        }
+        else {
+            throw "Test failed";
+        }
+    }
+    testSetDef(defense){
+        if(typeof defense === "number")
+            this.instance.defense = defense;
+        else throw "Defense must be number";
+        if (defense === this.instance.defense){
+            console.log("Defense Okay");
+        }
+        else {
+            throw "Test failed";
+        }
+    }
+}
+
+var eightbears = new Card('Eight Bears','monster');
+eightbears.addEffect('trample');
+eightbears.printEffects();
+
+var cardTest = new CardTest();
+cardTest.testAddEffect("TEST");
+cardTest.testSetAtk(1000);
+cardTest.testSetDef(1000);
