@@ -1,32 +1,42 @@
+"use strict";
 class card {
     constructor(name, type) {
-        this.name=name;
-        this.type=type;
-        this.effects=[];
-        this.attack=0;
-        this.defense=0;
+        this._name=name;
+        this._type=type;
+        this._effects=[];
+        this._attack=0;
+        this._defense=0;
     }
     //Get functions
     getName(){
-        return this.name;
+        return this._name;
     }
     getAtk(){
-        return this.attack;
+        return this._attack;
     }
     getDef(){
-        return this.defense;
+        return this._defense;
     }
     getEffects(){
-        return this.effects;
+        return this._effects;
     }
     //Set functions
     setAtk(attack){
-        this.attack=attack;
+        this._attack=attack;
     }
     setDef(defense){
-        this.defense=attack;
+        this._defense=attack;
     }
     addEffect(effect){
-        this.effects.push(effect)
+        this._effects.push(effect)
+    }
+    printEffects(){
+        for(var i = 0; i < this._effects.length; i++){ 
+		console.log(this._effects[i]);
+	}
     }
 }
+
+eightfingbears = new Card('Eight Bears','monster');
+eightfingbears.addEffect('trample');
+eightfingbears.printEffects();
