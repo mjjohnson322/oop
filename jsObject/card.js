@@ -37,7 +37,9 @@ class Card {
     }
 }
 
-class CardTest {
+exports.Card = Card;
+
+/*class CardTest {
     constructor(){
         this.instance = new Card('Test', 'Test');
     }
@@ -79,3 +81,4 @@ var cardTest = new CardTest();
 cardTest.testAddEffect("TEST");
 cardTest.testSetAtk(1000);
 cardTest.testSetDef(1000);
+*/
