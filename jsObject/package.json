@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/mjjohnson322/oop/issues"
   },
-  "homepage": "https://github.com/mjjohnson322/oop#readme"
+  "homepage": "https://github.com/mjjohnson322/oop#readme",
+  "dependencies": {
+    "chai": "^4.2.0"
+  }
 }
