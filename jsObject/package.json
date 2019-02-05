@@ -4,7 +4,7 @@
   "description": "## HW1 ```url https://github.com/mjjohnson322/oop/tree/master/jsObject ```",
   "main": "test.js",
   "scripts": {
-    "test": "mocha"
+    "test": "mocha --recursive"
   },
   "repository": {
     "type": "git",
