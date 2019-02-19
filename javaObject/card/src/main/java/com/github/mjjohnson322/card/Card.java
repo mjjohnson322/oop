@@ -24,11 +24,17 @@ public class Card {
     public void addEffect(String effect){
         effects.addEffect(effect);
     }
+    public void setType(String type){
+        cardType=type;
+    }
     public void setAtk(int _atk){
         atk=_atk;
     }
     public void setDef(int _def){
         def=_def;
+    }
+    public String getType(){
+        return cardType;
     }
     public int getAtk(){
         return atk;

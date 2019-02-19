@@ -10,8 +10,11 @@ package com.github.mjjohnson322.card;
  * @author Marcus
  */
 public class Effect {
-    String effectName;
+    private String effectName;
     Effect(String effect){
         effectName=effect;
+    }
+    public String getEffect(){
+        return effectName;
     }
 }
