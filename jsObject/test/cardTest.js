@@ -12,7 +12,7 @@ describe('Array', function() {
 		it('should have 1000 attack', function(){
 			let bearCard = new card.Card('Bear','monster');
 			bearCard.atk = 1000;
-			assert.equal(bearCard.atk=1000);
+			assert.equal(bearCard.atk,1000);
 		});
 		it('should throw an exception when atk is not a valid number', function(){
 			let bearCard = new card.Card('Bear','monster');
