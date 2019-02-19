@@ -5,23 +5,14 @@
  */
 package com.github.mjjohnson322.card;
 
+import java.util.LinkedList;
+
 /**
  *
  * @author Marcus
  */
-public class Card {
-    String cardName;
-    String cardType;
-    int atk;
-    int def;
-    Effects effects = new Effects();
-    Card(String name, String type){
-        cardName=name;
-        cardType=type;
-        atk=0;
-        def=0;
-    }
+public class Effects extends LinkedList<Effect>{
     void addEffect(String effect){
-        effects.addEffect(effect);
+        this.add(new Effect(effect));
     }
 }
