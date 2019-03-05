@@ -1,14 +1,14 @@
 # oop
 
-## HW1
+## HW1 jsObject with tests
 ```url
 https://github.com/mjjohnson322/oop/tree/master/jsObject
 ```
-# HW2
+## HW2 javaObject with tests
 ```url
-
+https://github.com/mjjohnson322/oop/tree/master/javaObject/card
 ```
-# HW3
+## HW3 cppObject with tests
 ```url
-
+https://github.com/mjjohnson322/oop/tree/master/cppObject
 ```
