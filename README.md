@@ -8,7 +8,7 @@ https://github.com/mjjohnson322/oop/tree/master/jsObject
 ```url
 https://github.com/mjjohnson322/oop/tree/master/javaObject/card
 ```
-## HW3 cppObject with tests
+## HW3 cppObject
 ```url
 https://github.com/mjjohnson322/oop/tree/master/cppObject
 ```
