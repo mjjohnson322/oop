@@ -2,7 +2,7 @@
 
 namespace player {
     class Player {
-        Player(const std::string & _name, const std::string & _characterClass, int _level);
+        public: Player(const std::string & _name, const std::string & _characterClass, int _level);
         private: const std::string name;
         private: const std::string characterClass;
         private: int level;
