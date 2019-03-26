@@ -1,32 +1,17 @@
 "use strict";
 class Card {
-    constructor(name, type) {
+    constructor(name) {
         this._name=name;
-        this._type=type;
         this._effects=[];
-        this._attack=0;
-        this._defense=0;
     }
     //Get functions
     get name(){
         return this._name;
     }
-    get atk(){
-        return this._attack;
-    }
-    get def(){
-        return this._defense;
-    }
     get effects(){
         return this._effects;
     }
     //Set functions
-    set atk(attack){
-        this._attack=attack;
-    }
-    set def(defense){
-        this._defense=defense;
-    }
     addEffect(effect){
         this._effects.push(effect)
     }
