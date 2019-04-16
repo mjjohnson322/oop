@@ -9,8 +9,13 @@ namespace card{
         this->effects.push_back(_effect);
     }
     void Card::printEffects() const{
-        for(i=0;i < this->effects.size;i++){
-            cout << "Effect " << i << ": " << effects[i] << endl;
+        if(this->effects.empty()){
+            cout << "Card has no effects" << endl;
+        }
+        else{
+            for(i=0;i < this->effects.size;i++){
+                cout << "Effect " << i << ": " << this->effects[i] << endl;
+            }
         }
     }
 }
