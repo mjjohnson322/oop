@@ -28,7 +28,8 @@ void test(MonsterCard test){
 }
 
 int main(int argc, char **argv){
-    MonsterCard testCard = MonsterCard("Test");
+    const std::string testStr="Test";
+    MonsterCard testCard = MonsterCard(testStr, 0, 0);
     test(testCard);
     return 0;
 }

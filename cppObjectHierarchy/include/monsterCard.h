@@ -4,7 +4,7 @@
 
 namespace card {
     class MonsterCard : public Card {
-        public: MonsterCard(const std::string & _name, int _atk=0, int _def=0);
+        public: MonsterCard(const std::string & _name, int _atk, int _def);
         private: int atk;
         private: int def;
         public: void setAtk(int _atk);

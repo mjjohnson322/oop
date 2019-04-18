@@ -2,18 +2,18 @@
 #include "monsterCard.h"
 
 namespace card{
-    MonsterCard::MonsterCard(const std::string & _name, int _atk=0, int _def=0) 
+    MonsterCard::MonsterCard(const std::string & _name, int _atk, int _def) 
         : Card(_name), atk(_atk), def(_def){}
-    void setAtk(int _atk){
-        this->atk=_atk;
+    void MonsterCard::setAtk(int _atk){
+        atk=_atk;
     }
-    void setDef(int _def){
-        this->def=_def;
+    void MonsterCard::setDef(int _def){
+        def=_def;
     }
-    int getAtk() const{
-        return this->atk;
+    int MonsterCard::getAtk() const{
+        return atk;
     }
-    int getDef() const{
-        this->def;
+    int MonsterCard::getDef() const{
+        return def;
     }
 }
