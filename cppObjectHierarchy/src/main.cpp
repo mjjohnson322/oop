@@ -17,7 +17,7 @@ void testSetDef(MonsterCard test){
 }
 
 void testName(MonsterCard test){
-    assert(test.getName()=="Test")
+    assert(test.getName()=="Test");
 }
 
 void test(MonsterCard test){
@@ -29,7 +29,7 @@ void test(MonsterCard test){
 }
 
 int main(int argc, char **argv){
-    MonsterCard test = new MonsterCard("Test");
-    test(test);
+    MonsterCard testCard = new MonsterCard("Test");
+    test(testCard);
     return 0;
 }
