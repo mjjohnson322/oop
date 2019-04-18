@@ -28,7 +28,7 @@ void test(MonsterCard test){
 }
 
 int main(int argc, char **argv){
-    MonsterCard *testCard = new MonsterCard("Test");
+    MonsterCard testCard = MonsterCard("Test");
     test(testCard);
     return 0;
 }
