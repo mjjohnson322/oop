@@ -18,7 +18,6 @@ void testName(MonsterCard test){
     assert(test.getName()=="Test")
 }
 
-
 void test(MonsterCard test){
     testSetAtk(test);
     testSetDef(test);
@@ -26,7 +25,6 @@ void test(MonsterCard test){
     //testAddEff(test);
     cout << "All tests passed" << endl;
 }
-
 
 int main(int argc, char **argv){
     MonsterCard test = new MonsterCard("Test");
