@@ -3,7 +3,6 @@
 #include "monsterCard.h"
 #include "card.h"
 
-
 using namespace card;
 
 void testSetAtk(MonsterCard test){
@@ -29,7 +28,7 @@ void test(MonsterCard test){
 }
 
 int main(int argc, char **argv){
-    MonsterCard testCard = new MonsterCard("Test");
+    MonsterCard *testCard = new MonsterCard("Test");
     test(testCard);
     return 0;
 }

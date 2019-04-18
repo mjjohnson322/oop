@@ -10,10 +10,10 @@ namespace card{
     void setDef(int _def){
         this->def=_def;
     }
-    int getAtk(){
+    int getAtk() const{
         return this->atk;
     }
-    int getDef(){
+    int getDef() const{
         this->def;
     }
 }

@@ -9,7 +9,7 @@ namespace card {
         private: int def;
         public: void setAtk(int _atk);
         public: void setDef(int _def);
-        public: int getAtk();
-        public: int getDef();
+        public: int getAtk() const;
+        public: int getDef() const;
     };
 }
