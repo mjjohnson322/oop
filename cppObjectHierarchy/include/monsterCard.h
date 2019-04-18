@@ -1,6 +1,6 @@
 #pragma once
 #include <iostream>
-#include <card.h>
+#include "card.h"
 
 namespace card {
     class MonsterCard : public Card {

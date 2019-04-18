@@ -1,4 +1,5 @@
-#include <card.h>
+#include "card.h"
+#include <vector>
 
 namespace card{
     Card::Card(const std::string & _name) : name(_name){}
@@ -10,11 +11,11 @@ namespace card{
     }
     void Card::printEffects() const{
         if(this->effects.empty()){
-            cout << "Card has no effects" << endl;
+            std::cout << "Card has no effects" << std::endl;
         }
         else{
             for(i=0;i < this->effects.size;i++){
-                cout << "Effect " << i << ": " << this->effects[i] << endl;
+                std::cout << "Effect " << i << ": " << this->effects[i] << std::endl;
             }
         }
     }

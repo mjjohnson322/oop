@@ -1,6 +1,8 @@
 #include <iostream>
-#include <monsterCard.h>
-#include <card.h>
+#include <assert>
+#include "monsterCard.h"
+#include "card.h"
+
 
 using namespace card;
 
@@ -23,7 +25,7 @@ void test(MonsterCard test){
     testSetDef(test);
     testName(test);
     //testAddEff(test);
-    cout << "All tests passed" << endl;
+    std::cout << "All tests passed" << std::endl;
 }
 
 int main(int argc, char **argv){

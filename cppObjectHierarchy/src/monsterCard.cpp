@@ -1,5 +1,5 @@
-#include <card.h>
-#include <monsterCard.h>
+#include "card.h"
+#include "monsterCard.h"
 
 namespace card{
     MonsterCard::MonsterCard(const std::string & _name, int _atk=0, int _def=0) 
