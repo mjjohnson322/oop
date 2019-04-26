@@ -9,5 +9,4 @@ namespace card{
         RITUAL,
         PENDULUM
     };
-    std::ostream& operator<<(std::ostream &out, const SpellType &type);
 }

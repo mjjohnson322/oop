@@ -3,17 +3,16 @@
 #include <iostream>
 
 namespace card{
-    PendulumCard::PendulumCard(std::string _name, int _atk, int _def/*, int _scale*/)
-        : Card(_name), MonsterCard(_name, _int, _def), SpellCard(_name, SpellType::PENDULUM)/*, scale(_scale)*/{
+    PendulumCard::PendulumCard(std::string _name, int _atk, int _def, int _scale)
+        : Card(_name), MonsterCard(_name, _atk, _def), SpellCard(_name, SpellType::PENDULUM), scale(_scale){
 
     }
-    /*int PendulumCard::getScale() const {
+    int PendulumCard::getScale() const {
         return this->scale;
     }
     void PendulumCard::setScale(int _scale){
         this->scale=_scale;
-    }*/
+    }
     PendulumCard::~PendulumCard(){
-        std::cout << "TEST" << endl;
     }
 }
