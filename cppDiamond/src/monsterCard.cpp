@@ -2,7 +2,7 @@
 #include "monsterCard.h"
 
 namespace card{
-    MonsterCard::MonsterCard(const std::string & _name, int _atk, int _def) 
+    MonsterCard::MonsterCard(std::string _name, int _atk, int _def) 
         : Card(_name), atk(_atk), def(_def){}
     void MonsterCard::setAtk(int _atk){
         atk=_atk;
@@ -16,5 +16,7 @@ namespace card{
     int MonsterCard::getDef() const{
         return def;
     }
-    MonsterCard::~MonsterCard(){}
+    MonsterCard::~MonsterCard(){
+
+    }
 }

@@ -3,8 +3,8 @@
 #include "card.h"
 
 namespace card {
-    class MonsterCard : public Card {
-        public: MonsterCard(const std::string & _name, int _atk, int _def);
+    class MonsterCard : public virtual Card {
+        public: MonsterCard(std::string _name, int _atk, int _def);
         private: int atk;
         private: int def;
         public: void setAtk(int _atk);

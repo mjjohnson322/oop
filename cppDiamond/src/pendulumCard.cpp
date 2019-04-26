@@ -1,15 +1,19 @@
 #include "pendulumCard.h"
 #include "spellType.h"
-#include "monsterCard.h"
-#include "spellCard.h"
+#include <iostream>
 
 namespace card{
-    PendulumCard::PendulumCard(const std::string & _name, int _atk, int _def, int _scale)
-        : Card(_name), monsterCard(_name, _int, _def), SpellCard(_name, SpellType::PENDULUM), scale(_scale){
+    PendulumCard::PendulumCard(std::string _name, int _atk, int _def/*, int _scale*/)
+        : Card(_name), MonsterCard(_name, _int, _def), SpellCard(_name, SpellType::PENDULUM)/*, scale(_scale)*/{
 
     }
-    int PendulumCard::getScale() const{
+    /*int PendulumCard::getScale() const {
         return this->scale;
     }
-    PendulumCard::~PendulumCard(){}
+    void PendulumCard::setScale(int _scale){
+        this->scale=_scale;
+    }*/
+    PendulumCard::~PendulumCard(){
+        std::cout << "TEST" << endl;
+    }
 }

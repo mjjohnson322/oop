@@ -26,23 +26,24 @@ void testSpellType(PendulumCard test){
     assert(test.getSpellType()==SpellType::PENDULUM);
 }
 
-void testScale(PendulumCard test){
+/*void testScale(PendulumCard test){
     assert(test.getScale()==8);
-}
+}*/
 
 void test(PendulumCard test){
     testSetAtk(test);
     testSetDef(test);
     testName(test);
     testSpellType(test);
-    testScale(test);
+    //testScale(test);
     //testAddEff(test);
     std::cout << "All tests passed" << std::endl;
 }
 
 int main(int argc, char **argv){
     const std::string testStr="Test";
-    PendulumCard testCard = PendulumCard(testStr, 0, 0, 8);
-    test(testCard);
+
+    PendulumCard *testCard = new PendulumCard(testStr, 0, 0/*, 8*/);
+    test(*testCard);
     return 0;
 }

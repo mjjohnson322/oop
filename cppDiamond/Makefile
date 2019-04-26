@@ -27,5 +27,5 @@ lib/libpendulumcard.so : tmp/spellcard.o tmp/monstercard.o tmp/card.o
 tmp/main.o : src/main.cpp include/card.h include/monsterCard.h include/spellCard.h include/spellType.h
 	$(CXX) $(CXXFLAGS) -c -o $@ $<
 
-bin/monsterCard : tmp/main.o lib/libmonstercard.so lib/libspellcard.so lib/libpendulumcard.so
+bin/card : tmp/main.o lib/libmonstercard.so lib/libspellcard.so lib/libpendulumcard.so
 	$(CXX) $(CXXFLAGS) -o $@ $^

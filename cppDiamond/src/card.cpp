@@ -2,7 +2,7 @@
 #include <vector>
 
 namespace card{
-    Card::Card(const std::string & _name) 
+    Card::Card(std::string _name) 
         : name(_name){}
     std::string Card::getName() const{
         return this->name;
@@ -20,5 +20,7 @@ namespace card{
             }
         }
     }
-    Card::~Card(){}
+    Card::~Card(){
+
+    }
 }

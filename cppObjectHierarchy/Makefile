@@ -15,5 +15,5 @@ lib/libmonstercard.so : tmp/monstercard.o tmp/card.o
 tmp/main.o : src/main.cpp include/card.h include/monsterCard.h
 	$(CXX) $(CXXFLAGS) -c -o $@ $<
 
-bin/monsterCard : tmp/main.o lib/libmonstercard.so
+bin/card : tmp/main.o lib/libmonstercard.so
 	$(CXX) $(CXXFLAGS) -o $@ $^

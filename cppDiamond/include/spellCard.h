@@ -4,9 +4,9 @@
 #include "spellType.h"
 
 namespace card {
-    class SpellCard : public Card {
-        public: SpellCard(const std::string & _name, const SpellType & _type);
-        private: const SpellType type();
+    class SpellCard : public virtual Card {
+        public: SpellCard(std::string _name, SpellType _type);
+        private: SpellType type;
         public: SpellType getSpellType() const;
         public: ~SpellCard();
     };
