@@ -8,5 +8,8 @@ namespace card{
         : Card(_name), monsterCard(_name, _int, _def), SpellCard(_name, SpellType::PENDULUM), scale(_scale){
 
     }
+    int PendulumCard::getScale() const{
+        return this->scale;
+    }
     PendulumCard::~PendulumCard(){}
 }
