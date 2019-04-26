@@ -20,4 +20,5 @@ namespace card{
             }
         }
     }
+    Card::~Card(){}
 }

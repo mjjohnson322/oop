@@ -16,4 +16,5 @@ namespace card{
     int MonsterCard::getDef() const{
         return def;
     }
+    MonsterCard::~MonsterCard(){}
 }

@@ -5,8 +5,9 @@
 
 namespace card {
     class SpellCard : public Card {
-        public: SpellCard(const std::string & _name, const SpellType & type);
+        public: SpellCard(const std::string & _name, const SpellType & _type);
         private: const SpellType type();
         public: SpellType getSpellType() const;
+        public: ~SpellCard();
     };
 }

@@ -6,7 +6,8 @@ namespace card{
         NORMAL,
         QUICKPLAY,
         CONTINUOUS,
-        RITUAL
+        RITUAL,
+        PENDULUM
     };
     std::ostream& operator<<(std::ostream &out, const SpellType &type);
 }

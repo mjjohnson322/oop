@@ -11,5 +11,6 @@ namespace card {
         public: void setDef(int _def);
         public: int getAtk() const;
         public: int getDef() const;
+        public: ~MonsterCard();
     };
 }
