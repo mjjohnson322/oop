@@ -24,3 +24,8 @@ https://github.com/mjjohnson322/oop/tree/jsObject/jsObject
 cppObject hierarchy
 
 https://github.com/mjjohnson322/oop/tree/master/cppObjectHierarchy
+
+### HW6
+cppObject Diamond of Death
+
+https://github.com/mjjohnson322/oop/tree/master/cppDiamond
