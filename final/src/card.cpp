@@ -1,4 +1,5 @@
 #include "card.h"
+#include <mementoCard.h
 #include <vector>
 
 namespace card{
@@ -6,6 +7,12 @@ namespace card{
         : name(_name){}
     std::string Card::getName() const{
         return this->name;
+    }
+    void createMemento(){
+
+    }
+    void retoreMemento(mementoCard mcard){
+
     }
     void Card::addEffect(std::string _effect){
         this->effects.push_back(_effect);
