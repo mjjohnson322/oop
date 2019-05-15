@@ -1,9 +1,6 @@
 #pragma once
-#include "card.h"
-#include "pendulumCard.h"
-#include "spellCard.h"
-#include "monsterCard.h"
 #include "spellType.h"
+#include "mementoCard.h"
 #include <vector>
 
 namespace card{
