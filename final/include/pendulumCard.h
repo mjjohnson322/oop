@@ -6,7 +6,7 @@
 
 namespace card {
     class PendulumCard : public MonsterCard, public SpellCard {
-        private: MementoPendCard memento;
+        private: MementoPendCard pendMemento;
         public: PendulumCard(std::string _name, int _atk, int _def, int _scale, int _level);
         private: int scale;
         public: int getScale() const;

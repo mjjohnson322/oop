@@ -9,10 +9,13 @@ namespace card{
         return this->name;
     }
     void Card::createMemento(){
-
+        memento=new MementoCard(this->name, this->effects);
+        /*this->memento->name=this->name;
+        this->memento->effects=this->effects;*/
     }
-    void Card::retoreMemento(mementoCard mcard){
-
+    void Card::retoreMemento(){
+        this->name=this->memento.name;
+        this->effects=this->memento.effects;
     }
     void Card::addEffect(std::string _effect){
         this->effects.push_back(_effect);
