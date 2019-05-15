@@ -12,9 +12,9 @@ namespace card{
     class MementoMonsterCard : public MementoCard {
         public: MementoMonsterCard(std::string _name, int _atk, int _def, 
             int _level, std::vector<std::string> _effects);
-        private: def;
-        private: atk;
-        private: level;
+        private: int def;
+        private: int atk;
+        private: int level;
     }
     class MementoSpellCard : public MementoCard {
         public: MementoSpellCard(std::string _name, SpellType _type, 
