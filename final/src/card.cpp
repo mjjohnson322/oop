@@ -8,10 +8,10 @@ namespace card{
     std::string Card::getName() const{
         return this->name;
     }
-    void createMemento(){
+    void Card::createMemento(){
 
     }
-    void retoreMemento(mementoCard mcard){
+    void Card::retoreMemento(mementoCard mcard){
 
     }
     void Card::addEffect(std::string _effect){

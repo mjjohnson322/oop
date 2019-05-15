@@ -10,7 +10,7 @@ namespace card {
         private: std::vector<std::string> effects;
         public: virtual std::string getName() const;
         public: virtual createMemento();
-        public: virutal restoreMemento(mementoCard mCard);
+        public: virtual restoreMemento(mementoCard mCard);
         public: virtual void addEffect(std::string);
         public: virtual void printEffects() const;
         public: virtual ~Card();

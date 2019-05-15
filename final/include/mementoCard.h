@@ -4,28 +4,29 @@
 #include "spellCard.h"
 #include "monsterCard.h"
 #include "spellType.h"
+#include <vector>
 
 namespace card{
     class MementoCard{
+        public: MementoCard(std::string _name, std::vector<std::string> _effects);
         private: std::string name;
         private: std::vector<std::string> effects;
-        public: virtual void setState(std::string _name, std::vector<std::string> _effects);
     }
-    class MementoMonsterCard : public MementoCard{
+    class MementoMonsterCard : public MementoCard {
+        public: MementoMonsterCard(std::string _name, int _atk, int _def, 
+            int _level, std::vector<std::string> _effects);
         private: def;
         private: atk;
         private: level;
-        public: virtual void setState(std::string _name, std::vector<std::string> _effects,
-            int _atk, int _def, int _level) override;
     }
     class MementoSpellCard : public MementoCard {
-        private: SpellType spellType;
-        public: virtual void setState(std::string _name,
-            std::vector<std::string> _effects, SpellType _spellType) override;
+        public: MementoSpellCard(std::string _name, SpellType _type, 
+            std::vector<std::string> _effects);
+        private: SpellType type;
     }
-    class MementoPendCard : public MonsterCard, public SpellCard{
+    class MementoPendCard : public MonsterCard, public SpellCard {
+        public: MementoPendCard(std::string _name, int _atk, int _def, 
+            int _scale, int level, std::vector<std::string> _effects);
         private: int scale;
-        public: virtual void setState(std::string _name, std::vector<std::string> _effects,
-            int _atk, int _def, int _level, SpellType _spellType, int _scale) override;
     }
 }
