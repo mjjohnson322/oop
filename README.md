@@ -29,3 +29,8 @@ https://github.com/mjjohnson322/oop/tree/master/cppObjectHierarchy
 cppObject Diamond of Death
 
 https://github.com/mjjohnson322/oop/tree/master/cppDiamond
+
+### Final
+Final project showcasing the Memento Pattern
+
+https://github.com/mjjohnson322/oop/tree/master/final
