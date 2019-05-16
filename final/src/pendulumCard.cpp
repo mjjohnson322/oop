@@ -23,7 +23,7 @@ namespace card{
     }
     void PendulumCard::restoreMemento(){
         this->name=this->pendMemento->getName();
-        this->effects=this->pendMemento->getEeffects();
+        this->effects=this->pendMemento->getEffects();
         this->atk=this->pendMemento->getAtk();
         this->def=this->pendMemento->getDef();
         this->level=this->pendMemento->getLevel();

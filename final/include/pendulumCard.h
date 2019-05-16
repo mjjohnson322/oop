@@ -8,7 +8,7 @@ namespace card {
     class PendulumCard : public MonsterCard, public SpellCard {
         private: MementoPendCard *pendMemento;
         public: PendulumCard(std::string _name, int _atk, int _def, int _scale, int _level);
-        private: int scale;
+        protected: int scale;
         public: int getScale() const;
         public: void setScale(int _scale);
         public: void createMemento() override;

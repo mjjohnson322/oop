@@ -7,9 +7,9 @@ namespace card {
     class MonsterCard : public virtual Card {
         public: MonsterCard(std::string _name, int _atk, int _def, int _level);
         private: MementoMonsterCard *monsterMemento;
-        private: int atk;
-        private: int def;
-        private: int level;
+        protected: int atk;
+        protected: int def;
+        protected: int level;
         public: void setAtk(int _atk);
         public: void setDef(int _def);
         public: int getAtk() const;
