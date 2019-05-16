@@ -5,12 +5,12 @@
 namespace card{
     //MementoCard Implementation
     MementoCard::MementoCard(std::string _name, std::vector<std::string> _effects)
-        : name(_name), effects(_effects){
+        : name(_name), effects(_effects) {
     }
-    std::string MementoCard::getName(){
+    std::string MementoCard::getName() const{
         return this->name;
     }
-    std::vector<std::string> MementoCard::getEffects(){
+    std::vector<std::string> MementoCard::getEffects() const{
         return this->effects;
     }
     MementoCard::~MementoCard(){}
@@ -20,13 +20,13 @@ namespace card{
     MementoMonsterCard::MementoMonsterCard(std::string _name, int _atk, int _def, 
         int _level, std::vector<std::string> _effects) 
         : MementoCard(_name, _effects), atk(_atk), def(_def), level(_level){}
-    int MementoMonsterCard::getAtk(){
+    int MementoMonsterCard::getAtk() const{
         return this->atk;
     }
-    int MementoMonsterCard::getDef(){
+    int MementoMonsterCard::getDef() const{
         return this->def;
     }
-    int MementoMonsterCard::getLevel(){
+    int MementoMonsterCard::getLevel() const{
         return this->level;
     }
     MementoMonsterCard::~MementoMonsterCard(){}
@@ -36,18 +36,18 @@ namespace card{
     MementoSpellCard::MementoSpellCard(std::string _name, SpellType _type, 
         std::vector<std::string> _effects)
         : MementoCard(_name,_effects), type(_type){}
-    SpellType MementoSpellCard::getSpellType(){
+    SpellType MementoSpellCard::getSpellType() const{
         return this->type;
     }
     MementoSpellCard::~MementoSpellCard(){}
     //*********************************************************
     
     //MementoPendCard Implementation
-    MementoPendCard::MementoPendCard(std::string _name, int _atk, int _def, int _scale, int _level,
-        std::vector<std::string> _effects) 
+    MementoPendCard::MementoPendCard(std::string _name, std::vector<std::string> _effects,
+        int _atk, int _def, int _level, SpellType _type, int _scale) 
         : MementoCard(_name,_effects), MementoMonsterCard(_name, _atk, _def, _level), 
         MementoSpellCard(_name, SpellType::PENDULUM), scale(_scale){}
-    int MementoPendCard::getScale(){
+    int MementoPendCard::getScale() const{
         return this->scale;
     }
     MementoPendCard::~MementoPendCard(){}
