@@ -26,7 +26,7 @@ namespace card{
         public: MementoSpellCard(std::string _name, SpellType _type,
             std::vector<std::string> _effects);
         private: SpellType type;
-        public: SpellType getSpellType() cosnt;
+        public: SpellType getSpellType() const;
         public: ~MementoSpellCard();
     };
     class MementoPendCard : public MementoMonsterCard, public MementoSpellCard {

@@ -3,7 +3,7 @@
 #include <vector>
 
 namespace card{
-    Card::Card(std::string _name) 
+    Card::Card(std::string _name)
         : name(_name){
     }
     std::string Card::getName() const{
