@@ -17,9 +17,9 @@ namespace card{
         this->spellMemento->type=this->type;*/
     }
     void SpellCard::restoreMemento(){
-        this->name=this->spellMemento.getName();
-        this->effects=this->spellMemento.getEffects();
-        this->type=this->spellMemento.getType();
+        this->name=this->spellMemento->getName();
+        this->effects=this->spellMemento->getEffects();
+        this->type=this->spellMemento->getType();
     }
     SpellCard::~SpellCard(){
 

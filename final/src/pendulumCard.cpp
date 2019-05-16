@@ -22,13 +22,13 @@ namespace card{
         this->pendMemento->level=this->level;*/
     }
     void PendulumCard::restoreMemento(){
-        this->name=this->pendMemento.getName();
-        this->effects=this->pendMemento.getEeffects();
-        this->atk=this->pendMemento.getAtk();
-        this->def=this->pendMemento.getDef();
-        this->level=this->pendMemento.getLevel();
-        this->type=this->pendMemento.getType();
-        this->scale=this->pendMemento.getScale();
+        this->name=this->pendMemento->getName();
+        this->effects=this->pendMemento->getEeffects();
+        this->atk=this->pendMemento->getAtk();
+        this->def=this->pendMemento->getDef();
+        this->level=this->pendMemento->getLevel();
+        this->type=this->pendMemento->getType();
+        this->scale=this->pendMemento->getScale();
     }
     PendulumCard::~PendulumCard(){
         delete pendMemento;

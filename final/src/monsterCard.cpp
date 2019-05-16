@@ -31,11 +31,11 @@ namespace card{
         this->monsterMemento->level=this->level;*/
     }
     void MonsterCard::restoreMemento(){
-        this->name=this->monsterMemento.getName();
-        this->effects=this->monsterMemento.getEffects();
-        this->atk=this->monsterMemento.getAtk();
-        this->def=this->monsterMemento.getDef();
-        this->level=this->monsterMemento.getLevel();
+        this->name=this->monsterMemento->getName();
+        this->effects=this->monsterMemento->getEffects();
+        this->atk=this->monsterMemento->getAtk();
+        this->def=this->monsterMemento->getDef();
+        this->level=this->monsterMemento->getLevel();
     }
     MonsterCard::~MonsterCard(){
 
