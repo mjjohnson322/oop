@@ -8,7 +8,7 @@ https://github.com/mjjohnson322/oop/tree/master/jsObject
 ### HW2 
 javaObject with tests
 
-https://github.com/mjjohnson322/oop/tree/master/javaObject/card
+https://github.com/mjjohnson322/oop/tree/master/javaObject
 
 ### HW3 
 cppObject
