@@ -5,7 +5,7 @@
 namespace card{
     //MementoCard Implementation
     MementoCard::MementoCard(std::string _name, std::vector<std::string> _effects)
-        :name(_name),effects(_effects){}
+        : name(_name), effects(_effects){}
     std::string MementoCard::getName(){
         return this->name;
     }

@@ -8,8 +8,8 @@ namespace card{
         public: MementoCard(std::string _name, std::vector<std::string> _effects);
         private: std::string name;
         private: std::vector<std::string> effects;
-        public: std::string getName() const;
-        public: std::vector<std::string> getEffects() const;
+        public: std::string getName();
+        public: std::vector<std::string> getEffects();
     };
     class MementoMonsterCard : public MementoCard {
         public: MementoMonsterCard(std::string _name, int _atk, int _def, 
