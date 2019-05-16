@@ -5,7 +5,7 @@
 namespace card{
     //MementoCard Implementation
     MementoCard::MementoCard(std::string _name, std::vector<std::string> _effects)
-        : name(_name), effects(_effects) {
+        : name(_name), effects(_effects){
     }
     std::string MementoCard::getName(){
         return this->name;
@@ -43,7 +43,7 @@ namespace card{
     //MementoPendCard Implementation
     MementoPendCard::MementoPendCard(std::string _name, int _atk, int _def, int _scale, int _level,
         std::vector<std::string> _effects) 
-        : Card(_name), MementoMonsterCard(_name, _atk, _def, _level), MementoSpellCard(_name, SpellType::PENDULUM), scale(_scale){}
+        : MementoCard(_name,_effects), MementoMonsterCard(_name, _atk, _def, _level), MementoSpellCard(_name, SpellType::PENDULUM), scale(_scale){}
     int MementoPendCard::getScale(){
         return this->scale;
     }
