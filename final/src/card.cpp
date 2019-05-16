@@ -14,8 +14,8 @@ namespace card{
         this->memento->effects=this->effects;*/
     }
     void Card::restoreMemento(){
-        this->name=this->memento->name;
-        this->effects=this->memento->effects;
+        this->name=this->memento.getName();
+        this->effects=this->memento.getEffects();
     }
     void Card::addEffect(std::string _effect){
         this->effects.push_back(_effect);

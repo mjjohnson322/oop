@@ -22,13 +22,13 @@ namespace card{
         this->pendMemento->level=this->level;*/
     }
     void MonsterCard::restoreMemento() override{
-        this->name=this->pendMemento->name;
-        this->effects=this->pendMemento->effects;
-        this->atk=this->pendMemento->atk;
-        this->def=this->pendMemento->def;
-        this->level=this->pendMemento->level;
-        this->type=this->pendMemento->type;
-        this->scale=this->pendMemento->scale;
+        this->name=this->pendMemento.getName();
+        this->effects=this->pendMemento.getEeffects();
+        this->atk=this->pendMemento.getAtk();
+        this->def=this->pendMemento.getDef();
+        this->level=this->pendMemento.getLevel();
+        this->type=this->pendMemento.getType();
+        this->scale=this->pendMemento.getScale();
     }
     PendulumCard::~PendulumCard(){
     }
