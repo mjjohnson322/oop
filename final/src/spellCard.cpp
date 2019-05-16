@@ -10,16 +10,16 @@ namespace card{
     SpellType SpellCard::getSpellType() const{
         return this->type;
     }
-    void SpellCard::createMemento() override{
+    void SpellCard::createMemento(){
         spellMemento=new MementoSpellCard(this->name, this->effects, this->type);
         /*this->spellMemento->name=this->name;
         this->spellMemento->effects=this->effects;
         this->spellMemento->type=this->type;*/
     }
-    void SpellCard::restoreMemento() override{
-        this->name=this->spellMemento->getName();
-        this->effects=this->spellMemento->getEffects();
-        this->type=this->spellMemento->getType();
+    void SpellCard::restoreMemento(){
+        this->name=this->spellMemento.getName();
+        this->effects=this->spellMemento.getEffects();
+        this->type=this->spellMemento.getType();
     }
     SpellCard::~SpellCard(){
 

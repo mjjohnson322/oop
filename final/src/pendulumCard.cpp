@@ -13,7 +13,7 @@ namespace card{
     void PendulumCard::setScale(int _scale){
         this->scale=_scale;
     }
-    void PendulumCard::createMemento() override{
+    void PendulumCard::createMemento(){
         pendMemento=new MementoCard(this->name, this->effects,this->atk,this->def,this->level,this->type,this->scale);
         /*this->pendMemento->name=this->name;
         this->pendMemento->effects=this->effects;
@@ -21,15 +21,16 @@ namespace card{
         this->pendMemento->def=this->def;
         this->pendMemento->level=this->level;*/
     }
-    void PendulumCard::restoreMemento() override{
-        this->name=this->pendMemento->getName();
-        this->effects=this->pendMemento->getEeffects();
-        this->atk=this->pendMemento->getAtk();
-        this->def=this->pendMemento->getDef();
-        this->level=this->pendMemento->getLevel();
-        this->type=this->pendMemento->getType();
-        this->scale=this->pendMemento->getScale();
+    void PendulumCard::restoreMemento(){
+        this->name=this->pendMemento.getName();
+        this->effects=this->pendMemento.getEeffects();
+        this->atk=this->pendMemento.getAtk();
+        this->def=this->pendMemento.getDef();
+        this->level=this->pendMemento.getLevel();
+        this->type=this->pendMemento.getType();
+        this->scale=this->pendMemento.getScale();
     }
     PendulumCard::~PendulumCard(){
+        delete pendMemento;
     }
 }

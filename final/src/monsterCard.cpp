@@ -22,7 +22,7 @@ namespace card{
     int MonsterCard::getLevel() const{
         return level;
     }
-    void MonsterCard::createMemento() override{
+    void MonsterCard::createMemento(){
         monsterMemento=new MementoCard(this->name, this->effects,this->atk,this->def,this->level);
         /*this->monsterMemento->name=this->name;
         this->monsterMemento->effects=this->effects;
@@ -30,12 +30,12 @@ namespace card{
         this->monsterMemento->def=this->def;
         this->monsterMemento->level=this->level;*/
     }
-    void MonsterCard::restoreMemento() override{
-        this->name=this->monsterMemento->getName();
-        this->effects=this->monsterMemento->getEffects();
-        this->atk=this->monsterMemento->getAtk();
-        this->def=this->monsterMemento->getDef();
-        this->level=this->monsterMemento->getLevel();
+    void MonsterCard::restoreMemento(){
+        this->name=this->monsterMemento.getName();
+        this->effects=this->monsterMemento.getEffects();
+        this->atk=this->monsterMemento.getAtk();
+        this->def=this->monsterMemento.getDef();
+        this->level=this->monsterMemento.getLevel();
     }
     MonsterCard::~MonsterCard(){
 
