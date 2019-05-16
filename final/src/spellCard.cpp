@@ -11,7 +11,7 @@ namespace card{
         return this->type;
     }
     void SpellCard::createMemento(){
-        spellMemento=MementoSpellCard(this->name, this->effects, this->type);
+        spellMemento=new MementoSpellCard(this->name, this->effects, this->type);
         /*this->spellMemento->name=this->name;
         this->spellMemento->effects=this->effects;
         this->spellMemento->type=this->type;*/

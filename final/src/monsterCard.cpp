@@ -23,7 +23,7 @@ namespace card{
         return level;
     }
     void MonsterCard::createMemento(){
-        monsterMemento=MementoMonsterCard(this->name, this->effects,this->atk,this->def,this->level);
+        monsterMemento=new MementoMonsterCard(this->name, this->effects,this->atk,this->def,this->level);
         /*this->monsterMemento->name=this->name;
         this->monsterMemento->effects=this->effects;
         this->monsterMemento->atk=this->atk;
