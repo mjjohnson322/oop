@@ -5,6 +5,7 @@
 #include "pendulumCard.h"
 #include "spellCard.h"
 #include "spellType.h"
+#include "mementoCard.h"
 
 using namespace card;
 
@@ -30,12 +31,23 @@ void testScale(PendulumCard test){
     assert(test.getScale()==8);
 }
 
+void testRestore(PendulumCard test){
+    test.setAtk(100)
+    test.createMemento();
+    test.setAtk(1000);
+    assert(test.getAtk()==1000);
+    test.restoreMemento();
+    assert(test.getAtk()==100);
+
+}
+
 void test(PendulumCard test){
     testSetAtk(test);
     testSetDef(test);
     testName(test);
     testSpellType(test);
     testScale(test);
+    testRestore(test);
     //testAddEff(test);
     std::cout << "All tests passed" << std::endl;
 }
