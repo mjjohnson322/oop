@@ -19,7 +19,7 @@ namespace card{
     void SpellCard::restoreMemento(){
         this->name=this->spellMemento->getName();
         this->effects=this->spellMemento->getEffects();
-        this->type=this->spellMemento->getType();
+        this->type=this->spellMemento->getSpellType();
     }
     SpellCard::~SpellCard(){
 

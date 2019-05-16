@@ -23,8 +23,7 @@ namespace card{
         public: ~MementoMonsterCard();
     };
     class MementoSpellCard : public virtual MementoCard {
-        public: MementoSpellCard(std::string _name, SpellType _type,
-            std::vector<std::string> _effects);
+        public: MementoSpellCard(std::string _name, std::vector<std::string> _effects, SpellType _type);
         private: SpellType type;
         public: SpellType getSpellType() const;
         public: ~MementoSpellCard();
