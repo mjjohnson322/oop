@@ -11,7 +11,7 @@ namespace card{
         public: virtual std::vector<std::string> getEffects() const;
         public: virtual ~MementoCard();
     };
-    class MementoMonsterCard : public MementoCard {
+    class MementoMonsterCard : public virtual MementoCard {
         public: MementoMonsterCard(std::string _name, int _atk, int _def, 
             int _level, std::vector<std::string> _effects);
         private: int atk;
@@ -22,7 +22,7 @@ namespace card{
         public: int getLevel() const;
         public: ~MementoMonsterCard();
     };
-    class MementoSpellCard : public MementoCard {
+    class MementoSpellCard : public virtual MementoCard {
         public: MementoSpellCard(std::string _name, SpellType _type,
             std::vector<std::string> _effects);
         private: SpellType type;
