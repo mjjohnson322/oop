@@ -30,8 +30,8 @@ namespace card{
         public: ~MementoSpellCard();
     };
     class MementoPendCard : public MementoMonsterCard, public MementoSpellCard {
-        public: MementoPendCard(std::string _name, int _atk, int _def, 
-            int _scale, int level, std::vector<std::string> _effects);
+        public: MementoPendCard(std::string _name, std::vector<std::string> _effects, int _atk, int _def, 
+             int level, SpellType _type,int _scale);
         private: int scale;
         public: int getScale() const;
         public: ~MementoPendCard();
