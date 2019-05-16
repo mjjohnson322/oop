@@ -32,7 +32,7 @@ void testScale(PendulumCard test){
 }
 
 void testRestore(PendulumCard test){
-    test.setAtk(100)
+    test.setAtk(100);
     test.createMemento();
     test.setAtk(1000);
     assert(test.getAtk()==1000);
