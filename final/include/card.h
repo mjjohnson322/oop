@@ -6,7 +6,7 @@
 namespace card {
     class Card {
         public: Card(std::string _name="BROKEN REQUIRES NAME");
-        private: MementoCard *memento;
+        private: MementoCard memento;
         private: std::string name;
         private: std::vector<std::string> effects;
         public: virtual std::string getName() const;

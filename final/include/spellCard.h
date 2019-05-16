@@ -7,7 +7,7 @@
 namespace card {
     class SpellCard : public virtual Card {
         public: SpellCard(std::string _name, SpellType _type);
-        private: MementoSpellCard *spellMemento;
+        private: MementoSpellCard spellMemento;
         private: SpellType type;
         public: SpellType getSpellType() const;
         public: virtual void createMemento() override;
