@@ -30,7 +30,7 @@ namespace card{
         this->monsterMemento->def=this->def;
         this->monsterMemento->level=this->level;*/
     }
-    void MonsterCard::retoreMemento() override{
+    void MonsterCard::restoreMemento() override{
         this->name=this->monsterMemento->name;
         this->effects=this->monsterMemento->effects;
         this->atk=this->monsterMemento->atk;

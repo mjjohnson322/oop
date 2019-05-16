@@ -1,5 +1,5 @@
 #include "card.h"
-#include <mementoCard.h
+#include "mementoCard.h"
 #include <vector>
 
 namespace card{
@@ -13,7 +13,7 @@ namespace card{
         /*this->memento->name=this->name;
         this->memento->effects=this->effects;*/
     }
-    void Card::retoreMemento(){
+    void Card::restoreMemento(){
         this->name=this->memento.name;
         this->effects=this->memento.effects;
     }
