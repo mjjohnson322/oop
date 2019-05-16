@@ -44,8 +44,8 @@ namespace card{
     //MementoPendCard Implementation
     MementoPendCard::MementoPendCard(std::string _name, std::vector<std::string> _effects,
         int _atk, int _def, int _level, SpellType _type, int _scale) 
-        : MementoCard(_name,_effects), MementoMonsterCard(_name, _atk, _def, _level), 
-        MementoSpellCard(_name, SpellType::PENDULUM), scale(_scale){}
+        : MementoCard(_name,_effects), MementoMonsterCard(_name, _effects, _atk, _def, _level), 
+        MementoSpellCard(_name, _effects, SpellType::PENDULUM), scale(_scale){}
     int MementoPendCard::getScale() const{
         return this->scale;
     }
