@@ -43,7 +43,7 @@ void test(PendulumCard test){
 int main(int argc, char **argv){
     const std::string testStr="Test";
 
-    PendulumCard *testCard = new PendulumCard(testStr, 0, 0, 8);
+    PendulumCard *testCard = new PendulumCard(testStr, 0, 0, 8, 4);
     test(*testCard);
     return 0;
 }
