@@ -1,11 +1,10 @@
 #pragma once
 #include "spellType.h"
-#include "mementoCard.h"
 #include <vector>
 
 namespace card{
     class MementoCard{
-        public: MementoCard(std::string _name, std::vector<std::string> _effects=NULL);
+        public: MementoCard(std::string _name, std::vector<std::string> _effects);
         private: std::string name;
         private: std::vector<std::string> effects;
         public: std::string getName();
