@@ -5,7 +5,7 @@
 
 namespace card{
     class MementoCard{
-        public: MementoCard(std::string _name, std::vector<std::string> _effects);
+        public: MementoCard(std::string _name, std::vector<std::string> _effects=NULL);
         private: std::string name;
         private: std::vector<std::string> effects;
         public: std::string getName();

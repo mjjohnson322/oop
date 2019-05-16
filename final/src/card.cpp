@@ -4,7 +4,8 @@
 
 namespace card{
     Card::Card(std::string _name) 
-        : name(_name){}
+        : name(_name){
+        }
     std::string Card::getName() const{
         return this->name;
     }
