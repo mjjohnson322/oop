@@ -13,6 +13,7 @@ namespace card{
     std::vector<std::string> MementoCard::getEffects(){
         return this->effects;
     }
+    MementoCard::~MementoCard(){}
     //*********************************************************
 
     //MementoMonsterCard Implementation
@@ -28,7 +29,7 @@ namespace card{
     int MementoMonsterCard::getLevel(){
         return this->level;
     }
-
+    MementoMonsterCard::~MementoMonsterCard(){}
     //*********************************************************
     
     //MementoSpellCard Implementation
@@ -38,14 +39,17 @@ namespace card{
     SpellType MementoSpellCard::getSpellType(){
         return this->type;
     }
+    MementoSpellCard::~MementoSpellCard(){}
     //*********************************************************
     
     //MementoPendCard Implementation
     MementoPendCard::MementoPendCard(std::string _name, int _atk, int _def, int _scale, int _level,
         std::vector<std::string> _effects) 
-        : MementoCard(_name,_effects), MementoMonsterCard(_name, _atk, _def, _level), MementoSpellCard(_name, SpellType::PENDULUM), scale(_scale){}
+        : MementoCard(_name,_effects), MementoMonsterCard(_name, _atk, _def, _level), 
+        MementoSpellCard(_name, SpellType::PENDULUM), scale(_scale){}
     int MementoPendCard::getScale(){
         return this->scale;
     }
+    MementoPendCard::~MementoPendCard(){}
     //*********************************************************
 }

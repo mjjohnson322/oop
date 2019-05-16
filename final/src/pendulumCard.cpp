@@ -27,7 +27,7 @@ namespace card{
         this->atk=this->pendMemento->getAtk();
         this->def=this->pendMemento->getDef();
         this->level=this->pendMemento->getLevel();
-        this->type=this->pendMemento->getType();
+        this->type=this->pendMemento->getSpellType();
         this->scale=this->pendMemento->getScale();
     }
     PendulumCard::~PendulumCard(){
