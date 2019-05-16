@@ -14,7 +14,7 @@ namespace card{
         this->scale=_scale;
     }
     void PendulumCard::createMemento(){
-        pendMemento=new MementoCard(this->name, this->effects,this->atk,this->def,this->level,this->type,this->scale);
+        pendMemento=MementoPendCard(this->name, this->effects,this->atk,this->def,this->level,this->type,this->scale);
         /*this->pendMemento->name=this->name;
         this->pendMemento->effects=this->effects;
         this->pendMemento->atk=this->atk;

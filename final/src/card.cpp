@@ -9,7 +9,7 @@ namespace card{
         return this->name;
     }
     void Card::createMemento(){
-        memento=new MementoCard(this->name, this->effects);
+        memento=MementoCard(this->name, this->effects);
         /*this->memento->name=this->name;
         this->memento->effects=this->effects;*/
     }
