@@ -13,7 +13,7 @@ namespace card{
     void PendulumCard::setScale(int _scale){
         this->scale=_scale;
     }
-    void MonsterCard::createMemento() override{
+    void PendulumCard::createMemento() override{
         pendMemento=new MementoCard(this->name, this->effects,this->atk,this->def,this->level,this->type,this->scale);
         /*this->pendMemento->name=this->name;
         this->pendMemento->effects=this->effects;
@@ -21,7 +21,7 @@ namespace card{
         this->pendMemento->def=this->def;
         this->pendMemento->level=this->level;*/
     }
-    void MonsterCard::restoreMemento() override{
+    void PendulumCard::restoreMemento() override{
         this->name=this->pendMemento->getName();
         this->effects=this->pendMemento->getEeffects();
         this->atk=this->pendMemento->getAtk();
