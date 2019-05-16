@@ -17,8 +17,8 @@ namespace card{
     //*********************************************************
 
     //MementoMonsterCard Implementation
-    MementoMonsterCard::MementoMonsterCard(std::string _name, int _atk, int _def, 
-        int _level, std::vector<std::string> _effects) 
+    MementoMonsterCard::MementoMonsterCard(std::string _name, std::vector<std::string> _effects,
+        int _atk, int _def, int _level) 
         : MementoCard(_name, _effects), atk(_atk), def(_def), level(_level){}
     int MementoMonsterCard::getAtk() const{
         return this->atk;
@@ -33,8 +33,7 @@ namespace card{
     //*********************************************************
     
     //MementoSpellCard Implementation
-    MementoSpellCard::MementoSpellCard(std::string _name, SpellType _type, 
-        std::vector<std::string> _effects)
+    MementoSpellCard::MementoSpellCard(std::string _name, std::vector<std::string> _effects, SpellType _type)
         : MementoCard(_name,_effects), type(_type){}
     SpellType MementoSpellCard::getSpellType() const{
         return this->type;
