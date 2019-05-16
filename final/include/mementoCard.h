@@ -12,8 +12,8 @@ namespace card{
         public: virtual ~MementoCard();
     };
     class MementoMonsterCard : public virtual MementoCard {
-        public: MementoMonsterCard(std::string _name, int _atk, int _def, 
-            int _level, std::vector<std::string> _effects);
+        public: MementoMonsterCard(std::string _name, std::vector<std::string> _effects, int _atk, int _def, 
+            int _level);
         private: int atk;
         private: int def;
         private: int level;
